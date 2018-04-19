@@ -8,6 +8,10 @@
 
 import UIKit
 
+// Declare a simple type alias so that we can assign alert handler completion
+// handlers for variables for clearer code intent.
+typealias ActionHandler = (UIAlertAction) -> Void
+
 class MOComposeTableViewController: UITableViewController {
     
     @IBOutlet weak var TweetCountLabel: UILabel!
@@ -103,6 +107,28 @@ class MOComposeTableViewController: UITableViewController {
     
     @IBAction func cancelAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    
+        // Declare our title and message for our alert view.
+        let title: String = "Save as a Draft?"
+        let message: String = "Do you want to save the current tweets as a draft?"
+        
+        // Create an instance of Alert Controller.
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        // Build our handler for our YES action and add it to the controller instance.
+        let yesAction: ActionHandler = {action in
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler:yesAction))
+
+        // Build our handler for our NO action and add it to the controller instance.
+        let noAction: ActionHandler = {action in
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: noAction))
+        
+        // Present out Alert Controller.
+        self.present(alert, animated: true)
     }
     
     @IBAction func doneAction(_ sender: Any) {
