@@ -106,7 +106,6 @@ class MOComposeTableViewController: UITableViewController {
     // MARK - Button Actions
     
     @IBAction func cancelAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
     
         // Declare our title and message for our alert view.
         let title: String = "Save as a Draft?"
@@ -117,6 +116,8 @@ class MOComposeTableViewController: UITableViewController {
         
         // Build our handler for our YES action and add it to the controller instance.
         let yesAction: ActionHandler = {action in
+            
+            // MARK - TODO: Handle saving of drafts if the user chooses this option.
             self.dismiss(animated: true, completion: nil)
         }
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler:yesAction))
