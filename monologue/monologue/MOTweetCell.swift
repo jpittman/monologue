@@ -10,6 +10,9 @@ import UIKit
 
 class MOTweetCell: UITableViewCell {
 
+    @IBOutlet weak var TweetField: UITextField!
+    @IBOutlet weak var CharacterCountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
