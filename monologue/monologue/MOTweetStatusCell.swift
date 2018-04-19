@@ -10,6 +10,11 @@ import UIKit
 
 class MOTweetStatusCell: UITableViewCell {
 
+    @IBOutlet weak var tweetLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

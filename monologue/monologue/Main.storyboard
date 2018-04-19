@@ -161,6 +161,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="DateLabel" destination="lTD-Z0-wqP" id="eB6-Q6-gZE"/>
+                                    <outlet property="TweetLabel" destination="w0n-z0-kWR" id="XSN-NH-0Ce"/>
+                                    <outlet property="countLabel" destination="dTt-lb-TCH" id="qAw-0F-eJU"/>
+                                    <outlet property="statusLabel" destination="6an-qh-H90" id="Kxg-8f-5J1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
