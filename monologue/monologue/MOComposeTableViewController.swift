@@ -14,7 +14,9 @@ class MOComposeTableViewController: UITableViewController {
     @IBOutlet weak var WordCountLabel: UILabel!
     @IBOutlet weak var CharacterCountLabel: UILabel!
     
-
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -96,5 +98,15 @@ class MOComposeTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    // MARK - Button Actions
+    
+    @IBAction func cancelAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func doneAction(_ sender: Any) {
+    }
+    
+    
 }

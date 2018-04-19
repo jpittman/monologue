@@ -102,13 +102,23 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Monologue" id="n4f-nC-WeZ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4XF-di-o8f"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="FtB-oN-Pgf"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4XF-di-o8f">
+                            <connections>
+                                <action selector="cancelAction:" destination="hOP-i0-Zyy" id="CKc-eb-3X2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="FtB-oN-Pgf">
+                            <connections>
+                                <action selector="doneAction:" destination="hOP-i0-Zyy" id="ksl-bY-FFT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="CharacterCountLabel" destination="C7q-nk-zhO" id="xUt-3A-cD7"/>
                         <outlet property="TweetCountLabel" destination="mgB-2b-pS1" id="URV-m4-RZM"/>
                         <outlet property="WordCountLabel" destination="zrc-a8-oz4" id="Df4-iX-Ug4"/>
+                        <outlet property="cancelButton" destination="4XF-di-o8f" id="DQl-m6-xOo"/>
+                        <outlet property="doneButton" destination="FtB-oN-Pgf" id="mI6-OC-5L3"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Svi-ag-5KE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -119,7 +129,7 @@
         <scene sceneID="W2q-Sb-Qyv">
             <objects>
                 <tableViewController id="HcK-og-JQn" customClass="MOTweetsViewController" customModule="monologue" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z2M-TR-ee8">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z2M-TR-ee8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
