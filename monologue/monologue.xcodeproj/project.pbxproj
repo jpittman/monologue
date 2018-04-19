@@ -14,6 +14,8 @@
 		814B9EE42077563100B0FAD0 /* monologueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B9EE32077563100B0FAD0 /* monologueTests.swift */; };
 		814B9EEF2077563100B0FAD0 /* monologueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B9EEE2077563100B0FAD0 /* monologueUITests.swift */; };
 		814B9EFD2077568C00B0FAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814B9EFC2077568C00B0FAD0 /* Main.storyboard */; };
+		81988C0A2089059200B23771 /* ComposeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81988C092089059200B23771 /* ComposeTableViewController.swift */; };
+		81988C0C2089065900B23771 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81988C0B2089065900B23771 /* TweetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		814B9EEE2077563100B0FAD0 /* monologueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monologueUITests.swift; sourceTree = "<group>"; };
 		814B9EF02077563100B0FAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		814B9EFC2077568C00B0FAD0 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		81988C092089059200B23771 /* ComposeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeTableViewController.swift; sourceTree = "<group>"; };
+		81988C0B2089065900B23771 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				814B9ED72077563000B0FAD0 /* LaunchScreen.storyboard */,
 				814B9EDA2077563100B0FAD0 /* Info.plist */,
 				814B9EFC2077568C00B0FAD0 /* Main.storyboard */,
+				81988C092089059200B23771 /* ComposeTableViewController.swift */,
+				81988C0B2089065900B23771 /* TweetCell.swift */,
 			);
 			path = monologue;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				814B9ED12077563000B0FAD0 /* ViewController.swift in Sources */,
 				814B9ECF2077563000B0FAD0 /* AppDelegate.swift in Sources */,
+				81988C0A2089059200B23771 /* ComposeTableViewController.swift in Sources */,
+				81988C0C2089065900B23771 /* TweetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
