@@ -8,7 +8,12 @@
 
 import UIKit
 
-class ComposeTableViewController: UITableViewController {
+class MOComposeTableViewController: UITableViewController {
+    
+    @IBOutlet weak var TweetCountLabel: UILabel!
+    @IBOutlet weak var WordCountLabel: UILabel!
+    @IBOutlet weak var CharacterCountLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
